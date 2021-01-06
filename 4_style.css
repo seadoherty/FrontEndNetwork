@@ -1,0 +1,109 @@
+:root {
+    --mainColor: #0a5c85;
+    --lightColor: #25a5e6;
+    --grey: #edf0f1;
+    --lightgrey: #fdfeff;
+    --containerHeight: 600px;
+    --fullShadow: 0 4px 4px 0 rgba(0, 0, 0, 0.2), 0 4px 4px 0 rgba(0, 0, 0, 0.19);
+    --rounded: 10px;
+    --border: 3px solid;
+    --mainFontSize: 12pt;
+    --largeFontSize: 18pt;
+    --bold: 600;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Sans-serif;
+}
+
+*:focus {
+    outline: none;
+}
+
+nav {
+    padding: 10px 10px;
+    background-color: var(--mainColor);
+    text-align: center;
+    color: var(--lightgrey);
+    font-size: var(--largeFontSize);
+}
+
+main {
+    height: 700px;
+    width: 1500px;
+    margin: 20px auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: var(--grey);
+    border-radius: var(--rounded);
+    box-shadow: var(--fullShadow);
+}
+
+section {
+    height: var(--containerHeight);
+    width: 800px;
+    font-size: var(--mainFontSize);
+    background-color: var(--lightgrey);
+    border: var(--border) var(--lightColor);
+    border-radius: var(--rounded);
+    box-shadow: var(--fullShadow);
+}
+
+article {
+    height: var(--containerHeight);
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--lightgrey);
+    border: var(--border) var(--lightColor);
+    border-radius: var(--rounded);
+    box-shadow: var(--fullShadow);
+}
+
+div {
+    display: flex;
+    justify-content: flex-start;
+    margin: 10px 0 0 10px;
+}
+
+button {
+    width: 140px;
+    height: 30px;
+    margin: 10px 0 0 170px;
+    color: var(--lightgrey);
+    font-size: var(--mainFontSize);
+    font-weight: var(--bold);
+    border: none;
+    border-radius: var(--rounded);
+    background-color: var(--lightColor);
+    box-shadow: var(--fullShadow);
+}
+
+h1 {
+    text-align: center;
+    margin: 20px 0 5px 0;
+    font-size: var(--largeFontSize);
+    color: var(--mainColor);
+}
+
+label {
+    color: var(--lightColor);
+    font-size: var(--mainFontSize);
+    font-weight: var(--bold);
+    width: 110px;
+}
+
+
+input:not([type=file]),
+select {
+    height: 30px;
+    width: 200px;
+    font-size: var(--mainFontSize);
+    box-sizing: border-box;
+    border: none;
+    border-radius: var(--rounded);
+    box-shadow: var(--fullShadow);
+}

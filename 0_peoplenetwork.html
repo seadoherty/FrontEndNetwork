@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>People Network</title>
+  <link rel="stylesheet" href="4_style.css">
+</head>
+
+<body>
+  <nav>
+    This is the People Network. You can add People to Departments with their first/last name and a picture.
+  </nav>
+  <main>
+    <article>
+      <h1>Add New people</h1>
+      <div>
+        <label for="deptselect">Department</label>
+        <select id="deptselect">
+          <option value=1>First Grade</option>
+          <option value=2>Second Grade</option>
+        </select>
+      </div>
+      <div>
+        <label for="fname">First Name</label>
+        <input type="text" id="fname" placeholder="--FIRST NAME--">
+      </div>
+      <div>
+        <label for="lname">Last Name</label>
+        <input type="text" id="lname" placeholder="--LAST NAME--">
+      </div>
+      <div>
+        <label for="profilepic">Profile Pic</label>
+        <input type="file" id="profilepic" name="file" />
+      </div>
+
+      <button type="button" onclick="new Network().addPerson()">Add Person</button>
+
+      <h1>Add New Department</h1>
+      <div>
+        <label for="department">Department</label>
+        <input type="text" id="department" placeholder="--DEPARTMENT--">
+      </div>
+      <button type="button" onclick="new Network().addDepartment()">Add Department</button><br><br>
+
+    </article>
+    <section id="peopleNetwork"></section>
+
+  </main>
+  <script type="text/javascript" src="https://unpkg.com/vis-network/standalone/umd/vis-network.min.js"></script>
+  <script src="1_peoplenetworkdata.js" type="text/javascript"></script>
+  <script src="2_rendernetwork.js" type="text/javascript"></script>
+  <script src="3_buildNetwork.js" type="text/javascript"></script>
+</body>
+
+</html>
